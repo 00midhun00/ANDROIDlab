@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <!-- Profile Picture -->
+    <ImageView
+        android:id="@+id/profilePic"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/profile" />
+
+    <!-- Name of the User -->
+    <TextView
+        android:id="@+id/userName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/profilePic"
+        android:layout_centerHorizontal="true"
+        android:text="John Doe"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp" />
+
+    <!-- Status Text (Post Content) -->
+    <TextView
+        android:id="@+id/postContent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/userName"
+        android:layout_centerHorizontal="true"
+        android:text="Having a wonderful day at the park!"
+        android:textSize="16sp"
+        android:layout_marginTop="10dp" />
+
+    <!-- Post Image -->
+    <ImageView
+        android:id="@+id/postImage"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@id/postContent"
+        android:layout_marginTop="10dp"
+        />
+
+    <!-- Like Button -->
+    <Button
+        android:id="@+id/likeButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Like"
+        android:layout_below="@id/postImage"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="16dp"/>
+
+    <!-- Comment Button -->
+    <Button
+        android:id="@+id/commentButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Comment"
+        android:layout_below="@id/postImage"
+        android:layout_toEndOf="@id/likeButton"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"/>
+
+    <!-- Share Button -->
+    <Button
+        android:id="@+id/shareButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Share"
+        android:layout_below="@id/postImage"
+        android:layout_toEndOf="@id/commentButton"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"/>
+
+</RelativeLayout>
